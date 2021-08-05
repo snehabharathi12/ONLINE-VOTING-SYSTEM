@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Login</title>
+   </head>
+   <style type="text/css">
+	body{
+		background: #FF9615
+	}
+	ul li{
+		list-style: none;
+		display: inline;
+		color:white;
+		margin-left:30px;
+		text-transform:uppercase;
+		font-size: 18px;
+	}
+	.formbox{
+		height:350px;
+		width:400px;
+		background-color: white;
+		position: absolute;
+		left:38%;
+		top:29%;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	.loginform{
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+	.textbox{
+		height: 30px;
+		width: 80%;
+		background-color: lightgrey;
+		border: none;
+		padding:5px;
+		margin-bottom: 20px;
+		border-radius: 5px
+	}
+	.loginbtn{
+		height: 35px;
+		width: 50%;
+		background-color: #FF9615;
+		border: none;
+		color: white;
+		margin-left: 20%;
+		margin-top: 10%;
+		border-radius: 5px;
+		font-size: 14px
+	}
+	.dropbox{
+		height:40px;
+		width: 83%;
+		padding:8px;
+		margin-bottom: 20px;
+		background-color: lightgrey;
+	}
+	.loginbtn:hover{
+	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+	.NAVBARCOLOR{
+		background: BLACK;
+	}
+
+
+
+    </style>
+    <body>
+    	<CENTER><h1>Online voting system </h1></CENTER>
+    	<hr>
+    	<NAV CLASS="NAVBARCOLOR"><div> 
+    		<ul>
+    			<li>Home</li>
+    			<li>login</li>
+    			<li>register</li>
+    		</ul>
+    	</div></NAV>
+    	<center><h2 style="color:white;">LOGIN</h2></center> 
+    	<div class="formbox">
+    		<form class="loginform">
+    			<input class="textbox" type="text" placeholder="Enter the username" name="username">
+    			<input class="textbox" type="password"placeholder="Enter your password" name="password">
+    			<select class="dropbox" name="role">
+    				<option value="1">voter</option>
+    				<option value="2">candidate</option>
+    			</select>
+    			<button class="loginbtn">Login</button>
+    			<center><p>New user?<a style="color: #FF9615" href="registration.html">Register here</a></p></center>
+    			
+    		</form>
+    	</div>
+
+
+    </body>
+</html>

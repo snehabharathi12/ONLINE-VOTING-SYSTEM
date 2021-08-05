@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<style type="text/css">
+	body{
+		background: #FF9615
+	}
+	ul li{
+		list-style: none;
+		display: inline;
+		color:white;
+		margin-left:30px;
+		text-transform:uppercase;
+		font-size: 18px;
+	}
+	.formbox{
+		height:700px;
+		width:460px;
+		background-color: white;
+		position: absolute;
+		left:35%;
+		top:195px;
+		border:10px;
+		border: 30%;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	.registerform{
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+	.textbox{
+		height: 30px;
+		width: 80%;
+		background-color: lightgrey;
+		border: none;
+		padding:5px;
+		margin-bottom: 20px;
+		border-radius: 5px
+	}
+	.dropbox{
+		height:40px;
+		width: 83%;
+		padding:8px;
+		margin-bottom: 20px;
+		background-color: lightgrey;
+	}
+	.registerbtn{
+		height: 35px;
+		width: 50%;
+		background-color: #FF9615;
+		border: none;
+		color: white;
+		margin-left: 20%;
+		margin-top: 10%;
+		border-radius: 5px;
+		font-size: 14px;
+
+	}
+	.registerbtn:hover{
+	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+	.NAVBARCOLOR{
+		background: BLACK;
+	}
+
+	</style>
+<body>
+   <center><h1>Online voting system </h1></center>
+    <hr>
+    <NAV CLASS=NAVBARCOLOR><div> 
+        <ul>
+    		<li>Home</li>
+    		<li>login</li>
+    		<li>register</li>
+    	</ul>
+   	</div></NAV>
+   	<CENTER><h3>REGISTER</h3></CENTER>
+   	<div class="formbox">
+   	    <form action="../api/register.php" method="POST" class="registerform">
+            <input class="textbox" type="text" placeholder=" Name" name="name">
+            <input class="textbox" type="tel" placeholder="Register no"  pattern="[0-9]{8}" name="mobile">
+
+            <input class="textbox" type="tel" placeholder="Mobile no." name="phone" pattern="[0-9]{10}" >
+            <input class="textbox" type="password" placeholder="Password" name="password">
+            <input class="textbox" type="password" placeholder="Conform password" name="password">
+            <P>Upload image:<input class="textbox" type="file"  name="photo"></P>
+        <p>Choose role:<select class="dropbox" name= "role">
+       	     <option value="1" >voter</option>
+       	     <option value="2">candidate</option>
+       	      </select></p>
+       	      <BUTTON class="registerbtn">REGISTER</BUTTON>
+       	     <center><p> Already user?<a style="color: #FF9615"  href="loginpage.html">Login here</a></p></center>
+       	  </form>
+
+
+
+
+
+</body>
+</html>
